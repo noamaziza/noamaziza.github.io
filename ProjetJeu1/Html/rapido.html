@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/rapido.css">
+  <script type="text/javascript" src="../JS/JQuery 3.5.1.js"></script>
+  <script src="../js/rapido.js"></script>
+  <script>
+    $
+    (
+      function()
+      {
+        $('td.utilisateur').click(click1);
+        $('td.utilisateur2').click(click2);
+        $('#valider').click(function()
+        {
+          if(nbCases == 0 || nbCases != 8 || nbCases2 == 0) 
+          {
+            alert("Veuillez choisir 8 nombres et un nombre de la grille B");
+          }
+          
+          if(nbCases == 8)
+          {
+            if(joueur.length > 9)
+            {
+              jeu();
+            }
+            else 
+            {
+              ordi = [];
+              joueur = [];
+              jeu();
+            }
+          }
+        });
+      }
+    );
+  </script>
+</head>
+<body>
+<nav>
+  <ul>
+    <li>
+      <a href="../Html/pagejeu.html">Menu</a>
+    </li>
+    <li>
+      <a href="../Html/memory1.html">Memory</a>
+    </li>
+    <li>
+      <a href="../Html/slotmachinnoam.html">SlotMachin Noam</a>
+    </li>
+    <li>
+      <a href="../Html/morpion.html">Bonus</a>
+    </li>
+</ul>
+</nav>
+<br>
+<div id="resultat"></div>
+<br>
+<div id="tables">
+  <div id="table">
+    <table>
+      <tr>
+        <td class="utilisateur">1</td>
+        <td class="utilisateur">2</td>
+        <td class="utilisateur">3</td>
+        <td class="utilisateur">4</td>
+        <td class="utilisateur">5</td>
+      </tr> 
+      <tr> 
+        <td class="utilisateur">6</td>
+        <td class="utilisateur">7</td>
+        <td class="utilisateur">8</td>
+        <td class="utilisateur">9</td>
+        <td class="utilisateur">10</td>
+      </tr> 
+      <tr> 
+        <td class="utilisateur">11</td>
+        <td class="utilisateur">12</td>
+        <td class="utilisateur">13</td>
+        <td class="utilisateur">14</td>
+        <td class="utilisateur">15</td>
+      </tr> 
+      <tr> 
+        <td class="utilisateur">16</td>
+        <td class="utilisateur">17</td>
+        <td class="utilisateur">18</td>
+        <td class="utilisateur">19</td>
+        <td class="utilisateur">20</td>
+      </tr> 
+    </table> 
+    <br> 
+    <table> 
+      <tr> 
+        <td class="utilisateur2">1</td>
+        <td class="utilisateur2">2</td>
+        <td class="utilisateur2">3</td>
+        <td class="utilisateur2">4</td>
+      <tr> 
+    </table>
+  </div>
+  <div id="table2">
+    <table>
+      <tr>
+        <td class="ordi">1</td>
+        <td class="ordi">2</td>
+        <td class="ordi">3</td>
+        <td class="ordi">4</td>
+        <td class="ordi">5</td>
+      </tr>
+      <tr>
+        <td class="ordi">6</td>
+        <td class="ordi">7</td>
+        <td class="ordi">8</td>
+        <td class="ordi">9</td>
+        <td class="ordi">10</td>
+      </tr>
+      <tr>
+        <td class="ordi">11</td>
+        <td class="ordi">12</td>
+        <td class="ordi">13</td>
+        <td class="ordi">14</td>
+        <td class="ordi">15</td>
+      </tr> 
+      <tr> 
+        <td class="ordi">16</td>
+        <td class="ordi">17</td>
+        <td class="ordi">18</td>
+        <td class="ordi">19</td>
+        <td class="ordi">20</td>
+      </tr>
+    </table>
+    <br>
+    <table>
+      <tr>
+        <td class="ordi2">1</td>
+        <td class="ordi2">2</td>
+        <td class="ordi2">3</td>
+        <td class="ordi2">4</td>
+      <tr>
+    </table>
+  </div>
+</div>
+<label>votre mise</label>
+<input type="number" value="10" id="mise" style="text-align: center;" readonly>
+<button id="valider">Valider</button>
+<br>
+<label>votre cagnotte</label>
+<input type="text" value="100" id="cagnotte" style="text-align: center;" readonly>
+<br>
+<input type="button" value="Restart" id="restart" onClick="window.location.reload(true)">
+
+</body>
+</html>

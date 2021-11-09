@@ -1,0 +1,94 @@
+@media only screen and (max-width: 2800px) {
+
+  body
+  {
+    background-image:url(../asset/assetRapido/casino-scene.jpg);
+  }
+
+  nav 
+  {
+      max-width: 70%;
+      mask-image: linear-gradient(90deg, rgba(139, 7, 7, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+      margin: 0 auto;
+      padding: 10px 0;
+  }
+
+  nav ul 
+  {
+      text-align: center;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  }
+
+  nav ul li 
+  {
+      display: inline-block;
+  }
+
+  nav ul li a 
+  {
+      padding: 18px;
+      font-family: "Open Sans";
+      text-transform:uppercase;
+      color: violet;
+      font-size: 18px;
+      text-decoration: none;
+      display: block;
+  }
+
+  nav ul li a:hover 
+  {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgb(255, 255, 255);
+      background: black;
+      color: violet;
+  }
+
+
+  #tables
+  {
+    align-items: center;
+    padding-left: 20%;
+  }
+
+  #table
+  {
+    float: left;
+    padding: 2.5%;
+  }
+
+  #table2
+  {
+    padding: 2.5%;
+  }
+
+  table
+  {
+    border: solid 3px;
+    align-items: center;
+    border-collapse: collapse;
+  }
+
+  td
+  {
+    border: solid 3px;
+    padding: 20px;
+    font-size: xx-large;
+    text-align: center;
+    background-color: grey;
+  }
+
+  .red
+  {
+    background-color: red;
+  }
+
+  #resultat
+  {
+    position: absolute;
+  }
+
+  label
+  {
+    color: whitesmoke;
+  }
+}
