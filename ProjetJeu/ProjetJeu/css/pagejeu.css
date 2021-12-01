@@ -88,7 +88,12 @@
         opacity: 0;
         visibility: hidden;
     }
-
+#btnretune
+{
+  background-color: transparent;
+  color: red;
+ 
+}
     .loader
     {
         width: 120px;
