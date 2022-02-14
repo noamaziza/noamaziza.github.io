@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+    <link rel="stylesheet" href="../css/memory2.css">
+    <script src="../js/JQuery 3.5.1.js"></script>
+</head>
+<body>
+<nav>
+        <ul>
+          <li>
+            <a href="../Html/pagejeu.html">Menu</a>
+          </li>
+          <li>
+            <a href="../Html/rapido.html">Rapido</a>
+          </li>
+          <li>
+            <a href="../Html/slotmachinnoam.html">SlotMachine</a>
+          </li>
+          <li>
+            <a href="../Html/morpion.html">Bonus</a>
+          </li>
+        </ul>
+      </nav>
+    <h1>Le jeu du Memory</h1>
+
+
+
+    <div id="choix">
+      <div id="victoire" hidden>
+        <label id="felicitation"></label>
+      </div>
+    <label>Les Niveaux:</label>
+    <br>
+    <a href="../html/memory1.html"><input type="button" id="Facile" value="Facile"></a>
+    <br>
+    <br>
+    <a href="../html/memory3.html"><input type="button" id="Difficile" value="Difficile"></a>
+    <br>
+    <br>
+    <label id="click"></label>
+    <br>
+    <input id="restart" type="button" value="Restart" onClick="window.location.reload(true)" hidden>
+    <br>
+    </div>
+
+    <div id="container">
+        <div id="resultat"></div>
+    </div>
+    <script src="../js/memory2.js"></script>
+
+    
+
+</body>
+</html>
