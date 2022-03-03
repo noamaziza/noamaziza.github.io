@@ -2627,8 +2627,9 @@ input, select, textarea {
 					margin-top: 0;
 				}
 }
-#allperf
+.tropgrand
 {
-	display: none;
-	width: 100% !important;
+	width: 80%;
+	height: 80%;
+	align-items: center;
 }
